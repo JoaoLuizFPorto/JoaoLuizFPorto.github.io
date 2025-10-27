@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat - Duko Ecommerce</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Duko Ecommerce</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="login">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Lançamentos Imperdíveis</h2>
+            <p>Confira as novidades mais quentes do mundo dos games.</p>
+            
+            <br>
+
+            <a href="#" id="heroButton">Clique Aqui</a>
+        </section>
+
+        <section class="product-section">
+            <h2>Produtos Mais Vendidos</h2>
+
+            <div class="product-grid">
+
+                <div class="card">
+                    <img src="img/Xbox 360.webp" alt="Xbox 360">
+                    <div class="card-content">
+                        <h3>Xbox 360</h3>
+                        <span class="price">R$ 500,00</span>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/Battlefield 6 - PS5.webp" alt="Battlefield 6 - PS5">
+                    <div class="card-content">
+                        <h3>Battlefield 6 - PS5</h3>
+                        <span class="price">R$ 349,90</span>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/PlayStation 4.webp" alt="PlayStation 4">
+                    <div class="card-content">
+                        <h3>PlayStation 4</h3>
+                        <span class="price">R$ 1.400,00</span>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Duko Ecommerce. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type='text/javascript'>
+	    function initEmbeddedMessaging() {
+	    	try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                embeddedservice_bootstrap.init(
+                    '00Dak00000YUVUE',
+                    'Chat_Duko_Ecommerce',
+                    'https://mindful-impala-k13gac-dev-ed.trailblaze.my.site.com/ESWChatDukoEcommerce1759456370048',
+                    {
+                        scrt2URL: 'https://mindful-impala-k13gac-dev-ed.trailblaze.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://mindful-impala-k13gac-dev-ed.trailblaze.my.site.com/ESWChatDukoEcommerce1759456370048/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+    </body>
+</html>
