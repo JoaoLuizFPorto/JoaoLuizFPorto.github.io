@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Duko Ecommerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css"> 
+</head>
+<body>
+
+    <header>
+        <a href="https://joaoluizfporto.github.io/" id="title">Duko Ecommerce</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" id="login">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Informe seus Dados</h2>
+            
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dak00000YUVUE" method="POST">
+                
+                <input type=hidden name="oid" value="00Dak00000YUVUE">
+                <input type=hidden name="retURL" value="https://joaoluizfporto.github.io/"> 
+
+                <label for="first_name">Primeiro Nome</label>
+                <input id="first_name" maxlength="40" name="first_name" type="text" />
+
+                <label for="last_name">Sobrenome</label>
+                <input id="last_name" maxlength="80" name="last_name" type="text" />
+
+                <label for="email">Email</label>
+                <input id="email" maxlength="80" name="email" type="text" />
+
+                <label for="phone">Telefone</label>
+                <input id="phone" maxlength="40" name="phone" type="text" />
+
+                <input type="submit" name="submit" value="Enviar" id="inputEnviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Duko Ecommerce. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type='text/javascript'>
+	    function initEmbeddedMessaging() {
+	    	try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; 
+                embeddedservice_bootstrap.init(
+                    '00Dak00000YUVUE',
+                    'Chat_Duko_Ecommerce',
+                    'https://mindful-impala-k13gac-dev-ed.trailblaze.my.site.com/ESWChatDukoEcommerce1759456370048',
+                    {
+                        scrt2URL: 'https://mindful-impala-k13gac-dev-ed.trailblaze.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://mindful-impala-k13gac-dev-ed.trailblaze.my.site.com/ESWChatDukoEcommerce1759456370048/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>

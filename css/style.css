@@ -23,9 +23,11 @@ header {
     z-index: 100;
 }
 
-header h1 {
+#title {
     color: #007bff;
     font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header nav ul {
